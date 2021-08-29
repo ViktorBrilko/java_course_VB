@@ -1,12 +1,15 @@
 package course.sandbox;
 
 public class Point {
-    public double p1;
-    public double p2;
+    public double x;
+    public double y;
 
-    public Point(double p1, double p2){
-        this.p1 = p1;
-        this.p2 = p2;
+    public Point(double x, double y){
+        this.x = x;
+        this.y = y;
     }
 
+    public double distance(Point p2){
+        return Math.sqrt((Math.pow((y -x),2)+Math.pow((p2.y -p2.x),2)));
+    }
 }
