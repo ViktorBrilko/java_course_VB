@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-    WebDriver wd;
+    public WebDriver wd;
 
     private ContactHelper contactHelper;
     private SessionHelper sessionHelper;
