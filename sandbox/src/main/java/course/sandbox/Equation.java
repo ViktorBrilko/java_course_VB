@@ -16,17 +16,29 @@ public class Equation {
 
         double d = b * b - 4 * a * c;
 
-        if (d > 0) {
-            number = 2;
-        } else {
-            if (d == 0) {
-                number = 1;
+        if (a != 0) {
+            if (d > 0) {
+                number = 2;
             } else {
-                number = 0;
+                if (d == 0) {
+                    number = 1;
+                } else {
+                    number = 0;
+                }
             }
+
+        } else if (b != 0) {
+            number = 1;
+            
+        } else if (c != 0) {
+            number = 0;
+
+        } else {
+            number = -1;
         }
     }
-    public int rootNumber(){
+
+    public int rootNumber() {
         return number;
     }
 }
