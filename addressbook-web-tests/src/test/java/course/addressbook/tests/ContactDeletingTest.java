@@ -8,7 +8,6 @@ public class ContactDeletingTest extends TestBase{
     public void testContactDeleting() {
         app.getContactHelper().selectContact();
         app.getContactHelper().deleteContact();
-        app.wd.switchTo().alert().accept();
         app.getNavigationHelper().goToHomePage();
     }
 }
