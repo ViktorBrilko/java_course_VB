@@ -1,5 +1,6 @@
 package course.addressbook.appmanager;
 
+import course.addressbook.models.ContactData;
 import course.addressbook.models.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -54,4 +55,6 @@ public class GroupHelper extends HelperBase{
     public boolean isThereAGroup() {
         return isElementPresent(By.name("selected[]"));
     }
+
+
 }
