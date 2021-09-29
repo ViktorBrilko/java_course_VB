@@ -7,6 +7,9 @@ public class Hello {
 		Point p2 = new Point(7,10);
 
 		System.out.println("Расстояние между точками - " + p1.distance(p2));
+		int n = 6;
+		int m = 2;
+		System.out.println(n % m);
 
 
 	}
