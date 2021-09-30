@@ -3,7 +3,7 @@ package course.addressbook.tests;
 import course.addressbook.models.ContactData;
 import org.testng.annotations.*;
 
-public class NewContactCreationTest extends TestBase{
+public class ContactCreationTest extends TestBase{
 
   @Test
   public void testNewContactCreation() throws Exception {
